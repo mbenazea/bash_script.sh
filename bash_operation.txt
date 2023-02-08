@@ -1,0 +1,41 @@
+Arithmetic operations can be performed in bash scripts using the expr command or 
+using double parentheses ((...)).
+Here is an example of using the expr command to perform arithmetic operations:
+
+#!/bin/bash
+# Take input from the user
+read -p "Enter two numbers: " num1 num2
+
+# Perform arithmetic operations
+sum=`expr $num1 + $num2`
+diff=`expr $num1 - $num2`
+product=`expr $num1 \* $num2`
+quotient=`expr $num1 / $num2`
+remainder=`expr $num1 % $num2`
+
+# Display the results
+echo "Sum: $sum"
+echo "Difference: $diff"
+echo "Product: $product"
+echo "Quotient: $quotient"
+echo "Remainder: $remainder"
+
+Here is an example of using double parentheses to perform arithmetic operations:
+#!/bin/bash
+
+# Take input from the user
+read -p "Enter two numbers: " num1 num2
+
+# Perform arithmetic operations
+sum=$((num1 + num2))
+diff=$((num1 - num2))
+product=$((num1 * num2))
+quotient=$((num1 / num2))
+remainder=$((num1 % num2))
+
+# Display the results
+echo "Sum: $sum"
+echo "Difference: $diff"
+echo "Product: $product"
+echo "Quotient: $quotient"
+echo "Remainder: $remainder"
