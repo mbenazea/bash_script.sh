@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-    #Author : Marcelus B.
+    #Author :Marcelus B.
     #Date : 01-Nov-2022
     
 ## ---------- If statement and file   -----------------
