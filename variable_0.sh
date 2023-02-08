@@ -1,7 +1,7 @@
 #!/bin/bash
 
-    #Author : Utrains
-    #Date : 01-Nov-2021
+    #Author : Marcelus B
+    #Date : 01-Nov-2022
 
 ## ---------- variables allow to contain values that we want to use several times in our scripts -----------------
 

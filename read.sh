@@ -1,10 +1,10 @@
 #!/bin/bash
 
 
-    #Author : Utrains
+    #Author : marcelus Benazea
     #Date : 01-Nov-2021
     
-## ---------- If statement and file   -----------------
+## ---------- collection of data  -----------------
 
 echo "What is your name ?"
 read na
