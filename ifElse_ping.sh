@@ -1,18 +1,21 @@
 #!/bin/bash
 
-    #Author : Utrains
-    #Date : 01-Nov-2021
+    #Author : Marcelus Benazea
+    #Date : 01-Nov-2022
 
     #----------------------- Description ------------------------------
-    # in this script we try to contact google, then we redirect the result of the ping command to the standard linux error output. 
-    #Because it is the result of the command that interests us to do the test
+    # Here's an example of a bash script to ping a URL and redirect the result to standard error:to
 
-HOST="google.com"
-ping -c 1 $HOST >2    # -c is used for count, it will send the request, number of times mentioned
+# specify the URL to ping
+URL=www.google.com
 
-if [ "$?" -eq "0" ]
+# ping the URL and redirect the output to standard error
+ping -c 1 $URL >&2
+
+# check if the ping was successful
+if [ $? -eq 0 ]
 then
-  echo "$HOST reachable"
+  echo "The URL $URL is reachable."
 else
-  echo "$HOST unreachable"
+  echo "The URL $URL is unreachable."
 fi
